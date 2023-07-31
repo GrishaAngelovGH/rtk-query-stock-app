@@ -1,6 +1,12 @@
 import { WebSocketServer } from 'ws'
+import express from 'express'
+import cors from 'cors'
 
-const wss = new WebSocketServer({ port: 5000 })
+const app = express()
+app.use(cors())
+app.get('/', (req, res) => { res.status(200).json() })
+
+const wss = new WebSocketServer({ server: app.listen(5000) })
 
 console.log('server is running...')
 
