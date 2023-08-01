@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Layout from './components/Layout'
+import StockCard from './components/StockCard'
 
 import { useGetStockDataQuery } from './api/stockData'
 
@@ -7,17 +8,20 @@ function App() {
   const { data } = useGetStockDataQuery()
 
   return (
-    <div className="row g-0">
-      <div className="col-md-12">
-        <Layout header={<Header />}>
-          {
-            data && data.map(v => (
-              <h1 key={v.id}>{JSON.stringify(v)}</h1>
-            ))
-          }
-        </Layout>
+    <Layout header={<Header />}>
+      <div className='row justify-content-center'>
+        {
+          data && data.map(v => (
+            <StockCard
+              key={v.id}
+              name={v.name}
+              currentValue={v.currentValue}
+              previousValue={v.previousValue}
+            />
+          ))
+        }
       </div>
-    </div>
+    </Layout>
   );
 }
 
