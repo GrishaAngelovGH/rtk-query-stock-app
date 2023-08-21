@@ -8,9 +8,4 @@ The project is constructed by:
 
 ## The project is using the following technologies:
 
-* Integrated **React 18.2.0**
-* Integrated **ws (websockets)**
-* Integrated **express** and **cors** (to disable CORS)
-* Integrated **@reduxjs/toolkit**
-* Integrated **react-redux**
-* Integrated **bootstrap**
+<img src="https://img.shields.io/badge/create--react--app-%23563D7C.svg?style=flat&logo=create-react-app&color=white" height="30"> <img src="https://img.shields.io/badge/React.JS-%23563D7C.svg?style=flat&logo=react&color=white" height="30"> <img src="https://img.shields.io/badge/WebSocket%20(WS)-3030?style=flat&logo=socket.io&color=white&logoColor=gray" height="30"> <img src="https://img.shields.io/badge/express-311C87?style=flat&logo=express&color=white&logoColor=gray" height="30"> <img src="https://img.shields.io/badge/cors-311C87?style=flat&color=white" height="30"> <img src="https://img.shields.io/badge/redux--toolkit-%23593d88.svg?style=flat&logo=redux&color=white&logoColor=purple" height="30"> <img src="https://img.shields.io/badge/react--redux-%23593d88.svg?style=flat&logo=redux&color=white&logoColor=purple" height="30"> <img src="https://img.shields.io/badge/Bootstrap-%23563D7C.svg?style=flat&logo=bootstrap&color=white&logoColor=purple" height="30">
